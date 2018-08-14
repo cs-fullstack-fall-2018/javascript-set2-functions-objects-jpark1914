@@ -5,6 +5,10 @@
     <title>Page 1 HTML</title>
 </head>
 <body>
+
+
+<input type="button" value="Open Page 2" onclick = openWin()>
+<input type="button" value="Print this page" onclick="printPage()"/>
 <!--
     BOM Exercise:
     - Provide a button that when clicked will open up HTML file 2 using the 'window' object
@@ -13,6 +17,20 @@
     HINTS:
     - Consider 'button onclick'
 -->
+<!--JAVASCRIPT CODE-->
+<script>
+
+    function printPage(){
+        window.print();
+    }
+
+    function openWin() {
+    window.open("page2.html");
+    }
+
+
+
+</script>
 
 </body>
 </html>

@@ -5,6 +5,20 @@
     <title>Page 2 HTML</title>
 </head>
 <body>
+
+
+<div id="header">
+
+</div>
+<br>
+
+<div id="url">
+
+</div>
+<br>
+<div id="header2">
+
+</div>
 <!--
     DOM Exercise:
     - Modify the provided HTML starter file to add a DIV at the top of this page with an ID of 'header'
@@ -14,7 +28,17 @@
     - Display the width and height of your screen
     - Print the current URL using the 'window' object
 -->
+<script>
+    var wXh= document.getElementById("header").innerHTML = "Screen width is  " + screen.width + " and the height is " + screen.height;
 
+    function printPage() {
+        window.print();
+    }
+
+    document.getElementById("url").innerHTML  = 'The full URL of this page is: '  + window.location.href;
+
+    document.getElementById("header2").innerHTML = 'The address of the page is: ' + window.location.href + '<br> and the title is: ' + document.title + '<br> and it was last modified ' + document.lastModified;
+</script>
 
 </body>
 </html>
